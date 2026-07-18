@@ -1,44 +1,41 @@
+//////////Question 01/////////
+//Change the text of a heading when a button is clicked.
+function change1() {
+    let heading = document.getElementById("line1");
+    let heading1 = document.getElementById("line2");
 
-// // btn1.addEventListener("click", () => {
-// //     btn2.textContent = "Umaima zainab";
-// //     document.getElementById("btn1").textContent = "JavaScript";
-// // })
+    let box = document.getElementById("box")
+    heading.textContent = "hello beautiful!!!";
+    heading.style.paddingLeft="30px"
 
-// // function change() {
-// //     let button1 = document.createElement("p");
-// //     button1.textContent = "Hello";
-
-// //     document.body.appendChild(button1);
-// //     button1.style.color="purple"
-// //     button1.style.fontSize="30px"
-// //     button1.style.text
-// // }
-
-// // function btn1(){
-// //     let btn2=document.createElement("h2");
-// //     btn2.textContent="beauty";
-// //     document.body.appendChild(btn2);
-// //     btn2.style.color="pink"
-// //     btn2.style.fontSize="100px"
-// //     setTimeout(() => {
-// //         btn2.remove();
-// //     }, 3000);
-
-// // }
-
-// function btn1(){
-//     let img=document.getElementById("img1");
-//     img.setAttribute("src","dog.jpg");
-// }
-// function link12(){
-//     let link=document.getElementById("link1")
-//     link.textContent="whatsapp"
-//     link.setAttribute("href","https://web.whatsapp.com/")
-//         // window.open("https://web.whatsapp.com/", "_blank");
-
-// }
-
-
-
-
+    heading.style.color = "red"
+    heading.style.width = "300px"
+    box.style.border = "3px solid greenyellow"
+    box.style.borderRadius = "20px"
+    box.style.width = "350px"
+    box.style.height = "300px"
+    heading1.style.borderTopLeftRadius = "18px";
+    heading1.style.borderTopRightRadius = "18px";
+    heading1.style.backgroundColor ="rgb(12, 156, 156)"
     
+}
+
+
+
+///////////Question no 02///////
+////Change the background color of a <div>.////////
+function change2(){
+    let heading3 = document.getElementById("box1")
+    let heading4 = document.getElementById("line4")
+    let heading5 = document.getElementById("line5")
+    heading3.style.backgroundColor ="lightblue"
+    heading3.style.transition="0.8"
+}
+
+
+/////////
+
+
+
+
+
