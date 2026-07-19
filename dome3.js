@@ -33,8 +33,23 @@ function change2(){
 }
 
 
-/////////
+/////////Questin no 03/////
+////////Hide and show an element using a button.///////
 
+function hideText() {
+    let text = document.getElementById("text");
+    text.style.display = "none";
+}
+
+function showText() {
+    let text = document.getElementById("text");
+    text.style.display = "block";
+}
+
+
+
+///////Question no 04//////////
+/////////Change an image when a button is clicked.///////////
 
 
 
