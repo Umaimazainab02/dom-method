@@ -51,6 +51,10 @@ function showText() {
 ///////Question no 04//////////
 /////////Change an image when a button is clicked.///////////
 
+function change5(){
+    let imgchng = document.getElementById("link8");
+    imgchng.style.backgroundImage = "url('dog.jpg')";
 
+}
 
 

@@ -189,14 +189,11 @@
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
   }
-  .mt-30 {
-    margin-top: calc(var(--spacing) * 30);
-  }
-  .mt-40 {
-    margin-top: calc(var(--spacing) * 40);
-  }
   .mt-50 {
     margin-top: calc(var(--spacing) * 50);
+  }
+  .mt-60 {
+    margin-top: calc(var(--spacing) * 60);
   }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
@@ -218,6 +215,15 @@
   }
   .h-100 {
     height: calc(var(--spacing) * 100);
+  }
+  .h-120 {
+    height: calc(var(--spacing) * 120);
+  }
+  .h-170 {
+    height: calc(var(--spacing) * 170);
+  }
+  .h-270 {
+    height: calc(var(--spacing) * 270);
   }
   .w-100 {
     width: calc(var(--spacing) * 100);
@@ -254,10 +260,6 @@
     border-style: var(--tw-border-style);
     border-width: 1px;
   }
-  .border-2 {
-    border-style: var(--tw-border-style);
-    border-width: 2px;
-  }
   .border-4 {
     border-style: var(--tw-border-style);
     border-width: 4px;
@@ -270,9 +272,6 @@
   }
   .border-violet-500 {
     border-color: var(--color-violet-500);
-  }
-  .border-violet-800 {
-    border-color: var(--color-violet-800);
   }
   .bg-amber-50 {
     background-color: var(--color-amber-50);
@@ -373,12 +372,6 @@
   .duration-300 {
     --tw-duration: 300ms;
     transition-duration: 300ms;
-  }
-  .text-shadow-white {
-    --tw-text-shadow-color: #fff;
-    @supports (color: color-mix(in lab, red, red)) {
-      --tw-text-shadow-color: color-mix(in oklab, var(--color-white) var(--tw-text-shadow-alpha), transparent);
-    }
   }
   @media (hover: hover) {
     .hover\:scale-105:hover {
@@ -516,15 +509,6 @@
   syntax: "*";
   inherits: false;
 }
-@property --tw-text-shadow-color {
-  syntax: "*";
-  inherits: false;
-}
-@property --tw-text-shadow-alpha {
-  syntax: "<percentage>";
-  inherits: false;
-  initial-value: 100%;
-}
 @property --tw-scale-x {
   syntax: "*";
   inherits: false;
@@ -566,8 +550,6 @@
       --tw-ring-offset-shadow: 0 0 #0000;
       --tw-outline-style: solid;
       --tw-duration: initial;
-      --tw-text-shadow-color: initial;
-      --tw-text-shadow-alpha: 100%;
       --tw-scale-x: 1;
       --tw-scale-y: 1;
       --tw-scale-z: 1;

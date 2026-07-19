@@ -1,13 +1,14 @@
 body {
     padding: 0px;
     margin: 0px;
-    background-image:url("photo-1530177150700-84cd9a3b059b.avif") ;
+    background-image: url("photo-1530177150700-84cd9a3b059b.avif");
     background-repeat: no-repeat;
-    background-size: cover;      
-    background-position: center; 
-    min-height: 100vh;           
+    background-size: cover;
+    background-position: center;
+    min-height: 100vh;
 }
 
+/* Question 01 */
 #line2 {
     margin-top: 0;
     text-align: center;
@@ -57,8 +58,11 @@ body {
 
 }
 
-#link5{
-    background-image: url(premium_photo-1733317331332-6dad7d9f1aaf.avif);
+
+/* Question 02 */
+#link8 {
+    background-image: url(istockphoto-133441603-612x612.jpg);
     background-repeat: no-repeat;
-    background-size: cover;      
+    background-size: cover;
+
 }
