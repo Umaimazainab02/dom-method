@@ -58,3 +58,101 @@ function change5(){
 }
 
 
+
+///////Question no 05/////////
+///////Count how many times a button has been clicked.//////
+let count = 0;
+function countbtn(){
+    count++;
+    document.getElementById("count").textContent = count;
+}
+
+
+//////Question no 06///////
+//////Display the current date and time in a paragraph.//////////
+function showdatetime() {
+    let today = new Date();
+
+    document.getElementById("time").textContent =
+        today.toLocaleDateString() + " " + today.toLocaleTimeString();
+}
+
+
+
+
+//////Question no 07/////////
+/////////Change the font size of a paragraph.//////////
+function fontsizechng(){
+    let font =document.getElementById("line20")
+    font.style.fontSize="30px"
+}
+
+
+/////////Question no 08////////
+////////Add a CSS class to an element.////////
+function change77() {
+    let text = document.getElementById("line55");
+
+    text.classList.add(
+        "text-pink-600",
+        "bg-blue-200",
+        "p-4",
+    );
+}
+
+
+/////////Question no 08////////
+//////Toggle dark mode./////
+
+function toogle11() {
+    let box = document.getElementById("darkBox");
+    let heading = document.getElementById("text");
+    let title = document.getElementById("text2");
+    let moon = document.querySelector(".fa-moon");
+    let sun = document.querySelector(".fa-sun");
+    let knob = document.getElementById("switchKnob");
+
+    box.classList.toggle("bg-gray-900");
+    box.classList.toggle("bg-amber-50");
+    heading.classList.toggle("text-white");
+    heading.classList.toggle("text-red-800");
+    title.classList.toggle("bg-black");
+    title.classList.toggle("bg-red-800");
+    moon.classList.toggle("hidden");
+    sun.classList.toggle("hidden");
+    knob.classList.toggle("translate-x-8");
+}
+
+
+
+////////Question no 9////////
+//////Build a character counter for a textarea.///////
+document.addEventListener("DOMContentLoaded", function () {
+    function characterCounter() {
+        let text = document.getElementById("textArea").value;
+        document.getElementById("count").textContent = text.length;
+    }
+
+    document.getElementById("textArea").addEventListener("input", characterCounter);
+});
+
+
+
+
+////////Question no 10////////
+function filterList() {
+    let searchValue = document.getElementById("search").value.toLowerCase();
+    let items = document.querySelectorAll("#itemList li");
+
+    items.forEach(function (item) {
+        let text = item.textContent.toLowerCase();
+
+        if (text.includes(searchValue)) {
+            item.style.display = "block";
+        } else {
+            item.style.display = "none";
+        }
+    });
+}
+
+document.getElementById("search").addEventListener("input", filterList);
